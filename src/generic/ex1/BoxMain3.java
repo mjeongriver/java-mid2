@@ -23,7 +23,7 @@ public class BoxMain3 {
         System.out.println("d = " + doubleValue);
 
         //타입 추론: 생성하는 제네릭 타입 생략 가능
-        //선언부에는 type 정보 있어야 함 
+        //선언부에는 type 정보 있어야 함
         GenericBox<Boolean> booleanBox = new GenericBox<>();
     }
 }
