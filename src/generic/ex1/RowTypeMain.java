@@ -3,7 +3,7 @@ package generic.ex1;
 public class RowTypeMain {
 
     public static void main(String[] args) {
-        GenericBox integerBox = new GenericBox<Integer>();
+        GenericBox integerBox = new GenericBox<Integer>(); //row type
         //GenericBox<Object> integerBox = new GenericBox<>(); //권장
 
         integerBox.set(10);
