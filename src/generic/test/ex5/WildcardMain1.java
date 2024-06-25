@@ -16,7 +16,7 @@ public class WildcardMain1 {
         WildcardEx.printWildcardV1(dogBox);
 
         WildcardEx.printGenericV2(dogBox);
-        WildcardEx.printWildcardV2(dogBox);
+        WildcardEx.printWildcardV2(catBox);
 
         Dog dog = WildcardEx.printAndReturnGeneric(dogBox);
         Animal animal = WildcardEx.printAndReturnWildcard(dogBox);
