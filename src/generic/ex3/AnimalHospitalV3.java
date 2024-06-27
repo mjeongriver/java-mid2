@@ -1,22 +1,23 @@
-package generic.test.ex3;
+package generic.ex3;
 
-import generic.animal.Dog;
+import generic.animal.Animal;
 
-public class DogHospital {
+public class AnimalHospitalV3<T extends Animal> {
 
-    private Dog animal;
+    private T animal;
 
-    public void set(Dog animal) {
+    public void set(T animal) {
         this.animal = animal;
     }
 
     public void checkup() {
+        //컴파일 오류
         System.out.println("동물 이름: " + animal.getName());
         System.out.println("동물 크기: " + animal.getSize());
         animal.sound();
     }
 
-    public Dog bigger(Dog target) {
+    public T bigger(T target) {
         return animal.getSize() > target.getSize() ? animal : target;
     }
 }
