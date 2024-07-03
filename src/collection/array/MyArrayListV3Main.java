@@ -7,23 +7,26 @@ public class MyArrayListV3Main {
         list.add("a");
         list.add("b");
         list.add("c");
+        list.add(1);
+        list.add(2);
         System.out.println(list);
 
         //원하는 위치에 추가
+        //마지막에 추가하거나 삭제 하면 O(1)이지만 앞이나 중간에 추가 또는 삭제 할 때는 O(n)이 되는 특징이 있음
         System.out.println("addList");
-        list.add(3, "addList"); //0(1);
+        list.add(3, "addList"); //O(1);
         System.out.println(list);
 
         System.out.println("addFirst");
-        list.add(0, "addFirst"); //0(n) -> 넣으면 오른쪽으로 밀어야 함
+        list.add(0, "addFirst"); //O(n) -> 넣으면 오른쪽으로 밀어야 함
         System.out.println(list);
 
         //삭제
-        Object removed1 = list.remove(4); //remove Last 0(1)
+        Object removed1 = list.remove(4); //remove Last O(1)
         System.out.println("removed(4) = " + removed1);
         System.out.println(list);
 
-        Object removed2 = list.remove(0); //remove First 0(n) -> 왼쪽으로 밀어야 함
+        Object removed2 = list.remove(0); //remove First O(n) -> 왼쪽으로 밀어야 함
         System.out.println("removed(0) = " + removed2);
         System.out.println(list);
     }
