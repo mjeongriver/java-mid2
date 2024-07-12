@@ -13,6 +13,7 @@ public class MyArrayListV4<E> {
         elementData = new Object[DEFAULT_CAPACITY];
     }
 
+    //제네릭은 컴파일 시 타입 체크를 도와주는 기능을 하지만, 런타임에는 해당 정보가 지워지기 때문에 구체적인 타입을 알 수 없음
     public MyArrayListV4(int initialCapacity) {
         elementData = new Object[initialCapacity];
     }
