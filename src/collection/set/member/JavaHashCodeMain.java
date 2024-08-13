@@ -28,8 +28,8 @@ public class JavaHashCodeMain {
         Member member2 = new Member("idA");
 
         //equals, hashCode를 오버라이딩 하지 않은 경우와 한 경우를 비교
-        System.out.println("(member1 == memwber2) = " + (member1 == member2));
-        System.out.println("(member1 equals memwber2) = " + (member1.equals(member2)));
+        System.out.println("(member1 == member2) = " + (member1 == member2));
+        System.out.println("(member1 equals member2) = " + (member1.equals(member2)));
         System.out.println("member1.hashCode() = " + member1.hashCode());
         System.out.println("member2.hashCode() = " + member2.hashCode()); //hashCode 없을 땐 다르게 나옴
     }
