@@ -5,9 +5,9 @@ import java.util.*;
 public class JavaSetMain {
 
     public static void main(String[] args) {
-        run(new HashSet<>());
-        run(new LinkedHashSet<>());
-        run(new TreeSet<>());
+        run(new HashSet<>()); //O(1)
+        run(new LinkedHashSet<>()); //O(1)
+        run(new TreeSet<>()); //O(logN)
     }
 
     private static void run(Set<String> set) {
