@@ -5,9 +5,9 @@ import java.util.*;
 public class JavaMapMain {
 
     public static void main(String[] args) {
-        run(new HashMap<>()); //입력한 순서를 보장하지 않는다.
-        run(new LinkedHashMap<>()); //키를 기준으로 입력한 순서를 보장한다.
-        run(new TreeMap<>()); //키 자체의 데이터 값을 기준으로 정렬한다.
+        run(new HashMap<>()); //입력한 순서를 보장하지 않는다. O(1)
+        run(new LinkedHashMap<>()); //키를 기준으로 입력한 순서를 보장한다. O(1)
+        run(new TreeMap<>()); //키 자체의 데이터 값을 기준으로 정렬한다. O(logN)
     }
 
     private static void run(Map<String, Integer> map) {
